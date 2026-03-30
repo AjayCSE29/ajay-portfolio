@@ -1,0 +1,146 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources <<
+/Font <<
+/F1 4 0 R
+>>
+>>
+/MediaBox [0 0 612 792]
+/Contents 5 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+5 0 obj
+<<
+/Length 1500
+>>
+stream
+BT
+/F1 24 Tf
+50 700 Td
+(AJAY) Tj
+0 -40 Td
+/F1 12 Tf
+(Computer Science Student & Developer) Tj
+0 -20 Td
+/F1 10 Tf
+(Email: ajay@example.com | Phone: +1 (234) 567-890 | LinkedIn: linkedin.com/in/ajay) Tj
+
+0 -30 Td
+/F1 14 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -15 Td
+/F1 10 Tf
+(Passionate Computer Science student with expertise in Machine Learning, Web Development,) Tj
+0 -12 Td
+(and Systems Programming. Seeking internship opportunities to apply skills and grow professionally.) Tj
+
+0 -25 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -15 Td
+/F1 10 Tf
+(Languages: Python, C++, JavaScript, Java) Tj
+0 -12 Td
+(Frameworks & Libraries: React, TensorFlow, OpenCV, Node.js) Tj
+0 -12 Td
+(Tools & Platforms: Git, GitHub, Linux, Docker, AWS) Tj
+0 -12 Td
+(Specializations: Machine Learning, Full-Stack Development, Game Development) Tj
+
+0 -25 Td
+/F1 14 Tf
+(PROJECTS) Tj
+0 -15 Td
+/F1 10 Tf
+(Litter Detection using Machine Learning) Tj
+0 -12 Td
+(- Trained CNN model using TensorFlow to detect and classify litter in images) Tj
+0 -12 Td
+(- Achieved 92% accuracy on test dataset) Tj
+0 -12 Td
+(- Technologies: Python, TensorFlow, OpenCV, NumPy) Tj
+
+0 -15 Td
+(Lunar Lander - C++ Game Development) Tj
+0 -12 Td
+(- Built physics-based game using C++ and SDL2 library) Tj
+0 -12 Td
+(- Implemented realistic gravity and fuel mechanics) Tj
+0 -12 Td
+(- Technologies: C++, SDL2, Game Physics) Tj
+
+0 -15 Td
+(Ajax Engine - Web Development Framework) Tj
+0 -12 Td
+(- Developed lightweight JavaScript framework with AJAX capabilities) Tj
+0 -12 Td
+(- Features real-time updates and REST API integration) Tj
+0 -12 Td
+(- Technologies: JavaScript, HTML/CSS, AJAX) Tj
+
+0 -25 Td
+/F1 14 Tf
+(EXPERIENCE & ACHIEVEMENTS) Tj
+0 -15 Td
+/F1 10 Tf
+(- Hackathon Winner (3 times) in regional competitions) Tj
+0 -12 Td
+(- Open Source Contributor with multiple published projects) Tj
+0 -12 Td
+(- AWS Certified Developer Associate) Tj
+0 -12 Td
+(- Published research on ML applications in waste management) Tj
+
+0 -25 Td
+/F1 14 Tf
+(EDUCATION) Tj
+0 -15 Td
+/F1 10 Tf
+(Bachelor of Science in Computer Science) Tj
+0 -12 Td
+(Expected Graduation: 2027) Tj
+0 -12 Td
+(GPA: 3.8/4.0) Tj
+
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000273 00000 n 
+0000000352 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+1903
+%%EOF
