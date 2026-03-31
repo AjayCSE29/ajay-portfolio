@@ -32,6 +32,9 @@ const BLOG_IMAGES = {
         './Clay_Club_Chennai_NominationDay_29-03-2026/4.jpg',
         './Clay_Club_Chennai_NominationDay_29-03-2026/5.jpg',
         './Clay_Club_Chennai_NominationDay_29-03-2026/6.jpg'
+    ],
+    'Pattimandram_18-10-2025': [
+        './Pattimandram_18-10-2025/Screenshot 2026-03-31 093440.png'
     ]
 };
 
