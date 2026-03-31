@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai D3 - Ajay's Blog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Ajay<span class="accent">.</span></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../index.html#skills" class="nav-link">Skills</a>
+                <a href="../index.html#experience" class="nav-link">Experience</a>
+                <a href="../index.html#blog" class="nav-link">Blog</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Container -->
+    <div class="blog-post-container">
+        <!-- Blog Header -->
+        <div class="blog-header">
+            <div class="blog-header-content">
+                <div class="blog-back">
+                    <a href="../index.html#blog" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Blog
+                    </a>
+                </div>
+                <h1 class="blog-post-title">Chennai D3 - Developer Dreamers Den Meetup</h1>
+                <div class="blog-post-meta">
+                    <span class="blog-post-date">
+                        <i class="fas fa-calendar"></i> 28 March 2026
+                    </span>
+                    <span class="blog-post-author">
+                        <i class="fas fa-user"></i> Ajay
+                    </span>
+                </div>
+                <div class="blog-post-tags">
+                    <span class="blog-post-tag">#Networking</span>
+                    <span class="blog-post-tag">#TechEvent</span>
+                    <span class="blog-post-tag">#Community</span>
+                    <span class="blog-post-tag">#Learning</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Content -->
+        <article class="blog-content">
+            <section class="content-section">
+                <h2>Introduction</h2>
+                <p>
+                    The Chennai D3 (Developer Dreamers Den) meetup was an incredible networking event that brought together 
+                    passionate developers from across Tamil Nadu. This event provided an excellent platform to connect with 
+                    like-minded professionals, share ideas, and learn about the latest trends in technology and web development.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2>What Happened at the Event</h2>
+                <p>
+                    The meetup featured engaging talks from industry experts covering topics ranging from machine learning 
+                    applications to modern web development practices. There were interactive sessions where developers showcased 
+                    their projects and innovations. The event also included networking sessions where I had the opportunity to 
+                    connect with developers working on fascinating projects in AI, systems programming, and full-stack development.
+                </p>
+                <p>
+                    Various tech enthusiasts shared their experiences and lessons learned from real-world projects. The atmosphere 
+                    was collaborative and inspiring, with everyone eager to learn from one another and build meaningful connections 
+                    within the tech community.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2>What I Learned</h2>
+                <ul class="content-list">
+                    <li><strong>Community Power:</strong> Networking with peers provided fresh perspectives on problem-solving and 
+                    new approaches to challenges I'm facing in my projects.</li>
+                    <li><strong>Industry Insights:</strong> Learned about current trends in AI/ML, best practices in systems design, 
+                    and modern development workflows.</li>
+                    <li><strong>Project Inspiration:</strong> Discovered innovative projects built by other developers that inspired 
+                    new ideas for my own work.</li>
+                    <li><strong>Collaboration Opportunities:</strong> Met potential collaborators for future projects and hackathons.</li>
+                    <li><strong>Professional Growth:</strong> Gained valuable insights into career paths and opportunities in tech.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Key Takeaways</h2>
+                <div class="takeaways">
+                    <div class="takeaway-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <div>
+                            <h3>Build Strong Connections</h3>
+                            <p>Networking is crucial for career growth and discovering new opportunities. Regular meetups help 
+                            build a supportive tech community around you.</p>
+                        </div>
+                    </div>
+                    <div class="takeaway-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h3>Stay Updated</h3>
+                            <p>Technology evolves rapidly. Attending events keeps you informed about new tools, frameworks, and 
+                            best practices in the industry.</p>
+                        </div>
+                    </div>
+                    <div class="takeaway-item">
+                        <i class="fas fa-handshake"></i>
+                        <div>
+                            <h3>Collaboration Wins</h3>
+                            <p>Great things happen when developers collaborate. Sharing knowledge and experiences creates a 
+                            stronger, more vibrant tech ecosystem.</p>
+                        </div>
+                    </div>
+                    <div class="takeaway-item">
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <h3>Never Stop Learning</h3>
+                            <p>Every interaction is a learning opportunity. From discussions to watching others' presentations, 
+                            there's always something new to discover.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="content-section">
+                <h2>Event Highlights - Photo Gallery</h2>
+                <p>
+                    Check out some memorable moments from the Chennai D3 meetup. These photos capture the collaborative spirit 
+                    and enthusiasm of the developer community.
+                </p>
+                
+                <!-- TEST: This should show if file paths work -->
+                <div style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-left: 4px solid #6366f1; display: none;" id="testImageContainer">
+                    <p style="margin: 0; font-size: 12px; color: #666;">
+                        <strong>Path Test:</strong> If you see an image below, relative paths work ✓
+                    </p>
+                    <img src="./Chennai_D3_28-03-2026/1.jpg" alt="Path test" style="max-height: 100px; margin-top: 10px; border: 1px solid #ccc;">
+                </div>
+                
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Images will be loaded dynamically here -->
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightboxImage" src="" alt="Gallery Image">
+            <div class="lightbox-controls">
+                <button class="lightbox-prev" id="lightboxPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightboxNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Ajay. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Set the event folder for this page
+        window.eventFolder = 'Chennai_D3_28-03-2026';
+    </script>
+    <script src="blog-script.js"></script>
+</body>
+</html>

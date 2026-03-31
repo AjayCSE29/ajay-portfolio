@@ -1,0 +1,439 @@
+/* =====================================================
+   BLOG PAGES - CSS STYLES
+   ===================================================== */
+
+/* =====================================================
+   1. BLOG POST CONTAINER
+   ===================================================== */
+
+.blog-post-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+/* =====================================================
+   2. BLOG HEADER
+   ===================================================== */
+
+.blog-header {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    padding: 60px 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: 1px solid var(--border-color);
+}
+
+.blog-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-back {
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    gap: 12px;
+    color: var(--accent-hover);
+}
+
+.blog-post-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.blog-post-meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-post-date,
+.blog-post-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.blog-post-date i,
+.blog-post-author i {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.blog-post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blog-post-tag {
+    background-color: var(--bg-primary);
+    color: var(--accent-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--accent-color);
+}
+
+/* =====================================================
+   3. BLOG CONTENT
+   ===================================================== */
+
+.blog-content {
+    line-height: 1.8;
+}
+
+.content-section {
+    margin-bottom: 50px;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.content-list {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.content-list li {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.content-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content-list strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* =====================================================
+   4. TAKEAWAYS
+   ===================================================== */
+
+.takeaways {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.takeaway-item {
+    background-color: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.takeaway-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.takeaway-item i {
+    font-size: 32px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.takeaway-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.takeaway-item p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+/* =====================================================
+   5. GALLERY
+   ===================================================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    transition: var(--transition);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+    display: block;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(99, 102, 241, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay i {
+    color: white;
+    font-size: 32px;
+}
+
+/* =====================================================
+   6. LIGHTBOX
+   ===================================================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#lightboxImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 2001;
+}
+
+.lightbox-close:hover {
+    transform: rotate(90deg);
+}
+
+.lightbox-controls {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: var(--accent-hover);
+    transform: scale(1.1);
+}
+
+/* =====================================================
+   7. RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 768px) {
+    .blog-header {
+        padding: 40px 20px;
+    }
+
+    .blog-post-title {
+        font-size: 2rem;
+    }
+
+    .blog-post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .takeaways {
+        grid-template-columns: 1fr;
+    }
+
+    .lightbox-controls {
+        bottom: -70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post-container {
+        padding: 15px;
+    }
+
+    .blog-header {
+        padding: 30px 15px;
+        border-radius: 8px;
+    }
+
+    .blog-post-title {
+        font-size: 1.5rem;
+    }
+
+    .blog-post-tags {
+        gap: 8px;
+    }
+
+    .blog-post-tag {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .content-section {
+        margin-bottom: 30px;
+    }
+
+    .content-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .content-section p {
+        font-size: 14px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .takeaway-item {
+        padding: 20px;
+    }
+
+    .lightbox-close {
+        top: -35px;
+        font-size: 28px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
