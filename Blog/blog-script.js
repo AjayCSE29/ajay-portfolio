@@ -35,6 +35,9 @@ const BLOG_IMAGES = {
     ],
     'Pattimandram_18-10-2025': [
         './Pattimandram_18-10-2025/Screenshot 2026-03-31 093440.png'
+    ],
+    'CodeSapiens_April': [
+        './CodeSapiens_April/cover.jpg.jpg'
     ]
 };
 
