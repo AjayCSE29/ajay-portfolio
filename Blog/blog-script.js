@@ -38,6 +38,15 @@ const BLOG_IMAGES = {
     ],
     'CodeSapiens_April': [
         './CodeSapiens_April/cover.jpg.jpg'
+    ],
+    'AMD_Ideathon_17-04-2026': [
+        './AMD_Ideathon_17-04-2026/cover.jpg'
+    ],
+    'StoryNight_17-04-2026': [
+        './StoryNight_17-04-2026/cover.jpg'
+    ],
+    'FOSS_18-04-2026': [
+        './FOSS_18-04-2026/cover.jpg'
     ]
 };
 
