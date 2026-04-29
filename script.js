@@ -435,3 +435,90 @@ document.addEventListener('keydown', (e) => {
 });
 
 console.log('Portfolio website loaded successfully! 🚀');
+
+// =====================================================
+// 17. GD GALLERY LIGHTBOX
+// ===================================================== 
+
+// GD Gallery Images
+const gdGalleryImages = [
+    './GD/20260403_121821 (2).png',
+    './GD/dysto.png',
+    './GD/hxr.png',
+    './GD/L\'ERudition_en (1).png',
+    './GD/mobile.png'
+];
+
+let currentImageIndex = 0;
+
+// Get lightbox elements
+const gdLightbox = document.getElementById('gdLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
+const gdGalleryBtn = document.getElementById('gdGalleryBtn');
+
+// Open gallery
+if (gdGalleryBtn) {
+    gdGalleryBtn.addEventListener('click', () => {
+        currentImageIndex = 0;
+        showLightboxImage();
+        gdLightbox.classList.add('active');
+    });
+}
+
+// Close gallery
+if (lightboxClose) {
+    lightboxClose.addEventListener('click', () => {
+        gdLightbox.classList.remove('active');
+    });
+}
+
+// Close on background click
+if (gdLightbox) {
+    gdLightbox.addEventListener('click', (e) => {
+        if (e.target === gdLightbox) {
+            gdLightbox.classList.remove('active');
+        }
+    });
+}
+
+// Previous image
+if (lightboxPrev) {
+    lightboxPrev.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + gdGalleryImages.length) % gdGalleryImages.length;
+        showLightboxImage();
+    });
+}
+
+// Next image
+if (lightboxNext) {
+    lightboxNext.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % gdGalleryImages.length;
+        showLightboxImage();
+    });
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (gdLightbox.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+            currentImageIndex = (currentImageIndex - 1 + gdGalleryImages.length) % gdGalleryImages.length;
+            showLightboxImage();
+        } else if (e.key === 'ArrowRight') {
+            currentImageIndex = (currentImageIndex + 1) % gdGalleryImages.length;
+            showLightboxImage();
+        } else if (e.key === 'Escape') {
+            gdLightbox.classList.remove('active');
+        }
+    }
+});
+
+// Show image
+function showLightboxImage() {
+    if (lightboxImage) {
+        lightboxImage.src = gdGalleryImages[currentImageIndex];
+        lightboxImage.alt = `Graphic Design Project ${currentImageIndex + 1}`;
+    }
+}

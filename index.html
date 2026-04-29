@@ -217,6 +217,36 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="GD/dysto.png" alt="Graphic Design and Animation">
+                    </div>
+                    <div class="project-header">
+                        <i class="fas fa-paintbrush"></i>
+                        <span class="project-category">Graphic Design</span>
+                    </div>
+                    <h3 class="project-title">Graphic Design & Animation</h3>
+                    <p class="project-description">
+                        Creative visual design and animation portfolio showcasing motion graphics, digital art, and animated video content. 
+                        Combining artistic vision with technical expertise to create compelling visual narratives and engaging multimedia experiences.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Motion Graphics</span>
+                        <span class="tech-tag">Animation</span>
+                        <span class="tech-tag">Visual Design</span>
+                        <span class="tech-tag">Video Editing</span>
+                    </div>
+                    <div class="project-links">
+                        <button class="project-link" id="gdGalleryBtn">
+                            <i class="fas fa-images"></i> View Gallery
+                        </button>
+                        <a href="https://youtu.be/8LdpZehOsmw" target="_blank" class="project-link">
+                            <i class="fab fa-youtube"></i> Video
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -674,6 +704,64 @@
                     <button type="submit" class="btn btn-primary">Send Message</button>
                     <div id="formMessage" class="form-message"></div>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- GD Gallery Lightbox Modal -->
+    <div class="lightbox" id="gdLightbox">
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Graphic Design Videos Section -->
+    <section class="gd-videos" style="background: var(--bg-secondary); padding: 60px 0; border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <h2 class="section-title">Featured Animation & Motion Graphics</h2>
+            <div class="videos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-top: 40px;">
+                <!-- Video 1 -->
+                <div style="position: relative; width: 100%;">
+                    <a href="https://youtu.be/8LdpZehOsmw" target="_blank" rel="noopener noreferrer" class="video-thumbnail-container">
+                        <img 
+                            src="https://img.youtube.com/vi/8LdpZehOsmw/maxresdefault.jpg" 
+                            alt="Animation Project 1"
+                            class="video-thumbnail-img"
+                            onerror="this.src='https://img.youtube.com/vi/8LdpZehOsmw/hqdefault.jpg'">
+                        <div class="video-overlay"></div>
+                        <div class="video-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-info">
+                            <strong>Click to watch</strong> • Animation Project 1
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Video 2 -->
+                <div style="position: relative; width: 100%;">
+                    <a href="https://youtu.be/5DKHMc6laL0" target="_blank" rel="noopener noreferrer" class="video-thumbnail-container">
+                        <img 
+                            src="https://img.youtube.com/vi/5DKHMc6laL0/maxresdefault.jpg" 
+                            alt="Animation Project 2"
+                            class="video-thumbnail-img"
+                            onerror="this.src='https://img.youtube.com/vi/5DKHMc6laL0/hqdefault.jpg'">
+                        <div class="video-overlay"></div>
+                        <div class="video-play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="video-info">
+                            <strong>Click to watch</strong> • Animation Project 2
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
